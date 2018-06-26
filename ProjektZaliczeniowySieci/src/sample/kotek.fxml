@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane prefHeight="338.0" prefWidth="391.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.KotkiController">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <Button fx:id="next" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#kolejnyKotek" prefHeight="26.0" prefWidth="190.0" text="Następny kotek" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <ImageView fx:id="obrazek" fitHeight="156.0" fitWidth="191.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <GridPane GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label fx:id="lImie" alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="26.0" prefWidth="43.0" text="Imie" visible="false">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtImie" alignment="CENTER" prefHeight="26.0" prefWidth="142.0" text="Label" visible="false" GridPane.columnIndex="1">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <GridPane layoutX="110.0" layoutY="189.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label fx:id="lGlosy" alignment="CENTER_RIGHT" contentDisplay="RIGHT" text="Ilość głosów" visible="false">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtGlosy" alignment="CENTER" prefHeight="26.0" prefWidth="112.0" text="Label" visible="false" GridPane.columnIndex="1">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <Label fx:id="blad" alignment="CENTER" prefHeight="18.0" prefWidth="196.0" text="Coś poszło nie tak ...." textFill="#fd1d1d" underline="true" visible="false" GridPane.columnIndex="1">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</GridPane>
